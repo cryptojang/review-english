@@ -1,5 +1,16 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Main from "./pages/main";
+import Day from "./pages/day";
+
 const App = () => {
-  return <div className="bg-red-100">hello</div>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/:day" element={<Day />} />
+      </Routes>
+    </BrowserRouter>
+  );
 };
 
 export default App;
