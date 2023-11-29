@@ -1,0 +1,228 @@
+[
+  {
+    "day": 1,
+    "title": "General Blockchain Concepts",
+    "questions": [
+      {
+        "Question": "What is blockchain?",
+        "Answer": "Blockchain is a decentralized and distributed ledger that records transactions across a network of computers."
+      },
+      {
+        "Question": "Explain the concept of consensus in a blockchain.",
+        "Answer": "Consensus is the mechanism that allows nodes in a blockchain network to agree on the state of the system."
+      },
+      {
+        "Question": "What is a smart contract?",
+        "Answer": "A smart contract is a self-executing contract with the terms of the agreement between buyer and seller directly written into code."
+      },
+      {
+        "Question": "Differentiate between public and private blockchains.",
+        "Answer": "Public blockchains are open to anyone, while private blockchains restrict access to a specific group."
+      },
+      {
+        "Question": "What is a fork in a blockchain?",
+        "Answer": "A fork is a split in the blockchain, resulting in two separate chains with a common history."
+      },
+      {
+        "Question": "How does proof-of-work consensus work?",
+        "Answer": "In proof-of-work, nodes (miners) solve complex mathematical problems to validate transactions and create new blocks."
+      },
+      {
+        "Question": "Explain Merkle Tree and its role in a blockchain.",
+        "Answer": "A Merkle Tree is a data structure that efficiently summarizes a large set of data, providing a concise representation."
+      },
+      {
+        "Question": "What is a token in the context of blockchain?",
+        "Answer": "A token is a unit of value created and managed on a blockchain, often representing assets or access rights."
+      },
+      {
+        "Question": "Describe the process of token creation on the Ethereum platform.",
+        "Answer": "Tokens on Ethereum are typically created using smart contracts that adhere to the ERC-20 or ERC-721 standard."
+      },
+      {
+        "Question": "Explain the concept of gas in Ethereum.",
+        "Answer": "Gas is a unit used to measure the computational work done by a transaction on the Ethereum network."
+      }
+    ]
+  },
+  {
+    "day": 2,
+    "title": "Solidity Programming Language",
+    "questions": [
+      {
+        "Question": "What is Solidity, and why is it used in blockchain development?",
+        "Answer": "Solidity is a programming language used for writing smart contracts on the Ethereum blockchain."
+      },
+      {
+        "Question": "Differentiate between storage and memory in Solidity.",
+        "Answer": "Storage is persistent data storage, while memory is temporary and used for function execution."
+      },
+      {
+        "Question": "What are the visibility specifiers in Solidity, and how do they differ?",
+        "Answer": "`public`, `internal`, `external`, and `private` are visibility specifiers, defining where functions can be called."
+      },
+      {
+        "Question": "Explain the concept of fallback functions in Solidity.",
+        "Answer": "Fallback functions are functions executed when a contract receives Ether without a specific function call."
+      },
+      {
+        "Question": "What is the purpose of the `view` and `pure` modifiers in Solidity?",
+        "Answer": "`view` indicates that a function doesn't modify state, while `pure` indicates that it doesn't read from or modify state."
+      },
+      {
+        "Question": "How does error handling work in Solidity?",
+        "Answer": "Solidity uses the `require` statement for error handling, and it throws an exception if the condition is not met."
+      },
+      {
+        "Question": "What is the role of the `msg.sender` and `msg.value` in Solidity?",
+        "Answer": "`msg.sender` represents the sender of the message, and `msg.value` represents the amount of Ether sent."
+      },
+      {
+        "Question": "Explain the concept of modifiers in Solidity.",
+        "Answer": "Modifiers are reusable code snippets that can be added to function declarations to extend their behavior."
+      },
+      {
+        "Question": "What is the purpose of the `emit` keyword in Solidity events?",
+        "Answer": "The `emit` keyword is used to trigger events in Solidity, allowing external applications to listen for those events."
+      },
+      {
+        "Question": "How can you prevent integer overflow in Solidity?",
+        "Answer": "Use the SafeMath library or explicitly check for overflow conditions before performing arithmetic operations."
+      }
+    ]
+  },
+  {
+    "day": 3,
+    "title": "Ethereum Development",
+    "questions": [
+      {
+        "Question": "Explain the concept of Ethereum gas limit.",
+        "Answer": "Gas limit is the maximum amount of gas units a block can have, and it determines the complexity of transactions that can be included."
+      },
+      {
+        "Question": "What is the purpose of the Ethereum Virtual Machine (EVM)?",
+        "Answer": "The EVM executes smart contracts on the Ethereum network, providing a runtime environment."
+      },
+      {
+        "Question": "How is state maintained in Ethereum, and what is the role of the state trie?",
+        "Answer": "State in Ethereum is maintained through a state trie, a data structure that represents the entire state of the network."
+      },
+      {
+        "Question": "What is the difference between a hard fork and a soft fork?",
+        "Answer": "A hard fork introduces incompatible changes, while a soft fork is backward-compatible."
+      },
+      {
+        "Question": "Explain the concept of ERC-721 tokens.",
+        "Answer": "ERC-721 is a standard for non-fungible tokens (NFTs) on the Ethereum blockchain, representing unique assets."
+      },
+      {
+        "Question": "How does Ethereum address security concerns related to smart contracts?",
+        "Answer": "Ethereum uses bug bounty programs, formal verification, and audits to enhance smart contract security."
+      },
+      {
+        "Question": "What is the role of the Ethereum Improvement Proposal (EIP) process?",
+        "Answer": "EIPs are proposals for improvements to the Ethereum protocol, standards, and client APIs."
+      },
+      {
+        "Question": "Describe the role of oracles in the context of blockchain.",
+        "Answer": "Oracles are services that provide real-world data to smart contracts, enabling them to interact with external information."
+      },
+      {
+        "Question": "Explain the concept of gas price in Ethereum.",
+        "Answer": "Gas price represents the amount of Ether paid per unit of gas and influences transaction priority."
+      },
+      {
+        "Question": "How does Ethereum handle privacy and confidentiality in transactions?",
+        "Answer": "Ethereum is a transparent blockchain, and transactions are visible to all participants. Techniques like zk-SNARKs can be used for privacy."
+      }
+    ]
+  },
+  {
+    "day": 4,
+    "title": "Smart Contract Security",
+    "questions": [
+      {
+        "Question": "What are common security vulnerabilities in smart contracts, and how can they be mitigated?",
+        "Answer": "Vulnerabilities include reentrancy, overflow, and lack of input validation. Mitigations involve careful coding practices and using established patterns."
+      },
+      {
+        "Question": "Explain the risk of a reentrancy attack in a smart contract.",
+        "Answer": "Reentrancy occurs when a malicious contract repeatedly calls a vulnerable contract's function before the first call completes."
+      },
+      {
+        "Question": "How does the principle of least privilege apply to smart contract development?",
+        "Answer": "Contracts should have the minimum level of access and permissions required to perform their functions, reducing attack surface."
+      },
+      {
+        "Question": "What is the role of automated testing in smart contract development?",
+        "Answer": "Automated testing helps identify bugs and vulnerabilities early in the development process, enhancing security."
+      },
+      {
+        "Question": "Describe the role of static analysis tools in smart contract security.",
+        "Answer": "Static analysis tools analyze code without executing it, identifying potential vulnerabilities and coding issues."
+      },
+      {
+        "Question": "How can you prevent denial-of-service (DoS) attacks on smart contracts?",
+        "Answer": "Implementing gas limits and using the withdrawal pattern can help prevent DoS attacks."
+      },
+      {
+        "Question": "Explain the importance of code audits in smart contract development.",
+        "Answer": "Code audits involve reviewing smart contract code by external experts to identify security vulnerabilities and ensure best practices."
+      },
+      {
+        "Question": "What is the role of the Ethereum Security Community in improving smart contract security?",
+        "Answer": "The Ethereum Security Community actively identifies and addresses security issues, providing guidance to the community."
+      },
+      {
+        "Question": "How can you secure private keys in a decentralized application (DApp)?",
+        "Answer": "Use hardware wallets, secure key management solutions, and follow best practices for storing and handling private keys."
+      },
+      {
+        "Question": "What are some best practices for secure smart contract development?",
+        "Answer": "Use established patterns, follow coding standards, perform thorough testing, and conduct regular code audits."
+      }
+    ]
+  },
+  {
+    "day": 5,
+    "title": "Future Trends in Blockchain",
+    "questions": [
+      {
+        "Question": "What is the role of blockchain in decentralized finance (DeFi)?",
+        "Answer": "Blockchain enables decentralized financial services, such as lending, trading, and asset management."
+      },
+      {
+        "Question": "How do layer 2 solutions contribute to scalability in blockchain networks?",
+        "Answer": "Layer 2 solutions, like sidechains and state channels, help reduce congestion and increase scalability on the main blockchain."
+      },
+      {
+        "Question": "Explain the concept of decentralized autonomous organizations (DAOs).",
+        "Answer": "DAOs are organizations run by smart contracts, with decisions made through consensus mechanisms."
+      },
+      {
+        "Question": "What challenges does blockchain face regarding interoperability?",
+        "Answer": "Interoperability challenges include different consensus mechanisms, scalability issues, and varying smart contract languages."
+      },
+      {
+        "Question": "How can blockchain technology be applied in supply chain management?",
+        "Answer": "Blockchain can provide transparency, traceability, and efficiency in supply chain processes, reducing fraud and errors."
+      },
+      {
+        "Question": "Describe the concept of cross-chain communication.",
+        "Answer": "Cross-chain communication enables assets and information to move seamlessly between different blockchain networks."
+      },
+      {
+        "Question": "What role does blockchain play in addressing identity management challenges?",
+        "Answer": "Blockchain can provide secure and decentralized identity solutions, enhancing privacy and reducing the risk of identity theft."
+      },
+      {
+        "Question": "How do non-fungible tokens (NFTs) impact the art and gaming industries?",
+        "Answer": "NFTs enable artists and gamers to tokenize and sell unique digital assets, revolutionizing ownership and monetization."
+      },
+      {
+        "Question": "Explain the concept of blockchain-based voting systems.",
+        "Answer": "Blockchain-based voting systems leverage the technology's security features to create transparent and tamper-resistant voting processes."
+      }
+    ]
+  }
+]
