@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import englishData from "../englishData.json";
 import MainCard from "../components/MainCard";
 

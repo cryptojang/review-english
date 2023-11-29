@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .container {
+    @apply min-h-screen max-w-screen-md mx-auto px-8 pt-20;
+  }
+  .btn-style {
+    @apply border-2 border-black px-2 rounded-md;
+  }
+}
