@@ -11,7 +11,8 @@ const Day = () => {
   const [isVisibile, setIsVisible] = useState(false);
   const [currentPage, setCurrentPage] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
-  const isImportant = [
+
+  const [isImportant, setIsImportant] = useState([
     false,
     false,
     false,
@@ -22,7 +23,7 @@ const Day = () => {
     false,
     false,
     false,
-  ];
+  ]);
 
   const { day } = useParams();
 
@@ -43,11 +44,21 @@ const Day = () => {
   };
 
   const onClickIsImportant = () => {
-    isImportant[currentPage] = true;
+    const newIsImportant = isImportant.map((v, i) => {
+      if (i === currentPage) {
+        console.log(v);
 
-    console.log(isImportant[currentPage]);
-    console.log(currentPage);
-    console.log(isImportant);
+        if (v === true) {
+          return false;
+        } else {
+          return true;
+        }
+      } else {
+        return v;
+      }
+    });
+
+    setIsImportant(newIsImportant);
   };
 
   const onClickSound = async () => {
@@ -136,7 +147,7 @@ const Day = () => {
         <button
           onClick={onClickIsImportant}
           className={` absolute -top-8 left-0 ${
-            isImportant[currentPage] && "bg-pink-500"
+            isImportant[currentPage] && "text-pink-500"
           }`}
         >
           <FaStar />
